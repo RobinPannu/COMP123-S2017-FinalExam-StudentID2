@@ -10,7 +10,7 @@ using System.Windows.Forms;
  * Date: August 17,2017
  * StudentID: 300930741
  * Description: This is the ScoreBoard Class
- * Version:0.3 : Created cONSTRUCTOR
+ * Version:0.4 : cONVERT ScoreTextBox.Text to FinalScoreTextBox.Text 
  */
 namespace COMP123_S2017_FinalExam_StudentID2
 {
@@ -60,6 +60,8 @@ namespace COMP123_S2017_FinalExam_StudentID2
             set
             {
                 this._scoreTextBox = value;
+                this.ScoreTextBox.Text = Convert.ToString(this._score);
+                this.FinalScoreTextBox.Text = Convert.ToString(this._score);
             }
         }
 
