@@ -10,7 +10,7 @@ using System.Windows.Forms;
  * Date: August 17,2017
  * StudentID: 300930741
  * Description: This is the ScoreBoard Class
- * Version:0.4 : cONVERT ScoreTextBox.Text to FinalScoreTextBox.Text 
+ * Version:0.5 : cONVERT TimeTextBox.Text  to _time 
  */
 namespace COMP123_S2017_FinalExam_StudentID2
 {
@@ -74,7 +74,7 @@ namespace COMP123_S2017_FinalExam_StudentID2
             set
             {
                 this._time = value;
-                
+                this.TimeTextBox.Text = Convert.ToString(this._time);
             }
         }
 
