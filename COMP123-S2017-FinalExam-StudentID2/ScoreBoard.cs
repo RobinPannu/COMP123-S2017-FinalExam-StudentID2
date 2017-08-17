@@ -10,7 +10,7 @@ using System.Windows.Forms;
  * Date: August 17,2017
  * StudentID: 300930741
  * Description: This is the ScoreBoard Class
- * Version:0.2 : Created PUBLIC PROPERTIES 
+ * Version:0.3 : Created cONSTRUCTOR
  */
 namespace COMP123_S2017_FinalExam_StudentID2
 {
@@ -86,6 +86,18 @@ namespace COMP123_S2017_FinalExam_StudentID2
             {
                 this._timeTextBox = value;
             }
+        }
+        //CONSTRUCTOR
+        /// <summary>
+        /// This is the constructor class for ScoreBoard
+        /// It takes scoreTextBox(TextBox), timeTextBox(TextBox), finalScoreTextBox(TextBox).
+        /// </summary>
+        /// <param name="ScoreTextBox"></param>
+        /// <param name="TimeTextBox"></param>
+        /// <param name="FinalScoreTextBox"></param>
+        public ScoreBoard(TextBox ScoreTextBox, TextBox TimeTextBox, TextBox FinalScoreTextBox)
+        {
+
         }
 
     }
